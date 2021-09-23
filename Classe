@@ -1,0 +1,15 @@
+Coordonee: coord(x ,y)v
+
+Mur: interdit au joueur d'aller sur cette case
+    Coordonee
+
+Joeur: definit le joueur:
+    coordonee
+    nbDeTour
+    mouvement -> newCord
+
+Maze: definit le labirynthe
+    bnLigne
+    nbColone
+    generation -> Murs[]
+    joueur
