@@ -11,6 +11,11 @@ private:
     coordonnee coord;
     int nbTour;
 
+public:
+    Joueur(coordonnee startPos){
+        coord=new coordonnee(startPos.getX(), startPos.getY());
+        nbTour=0;
+    }
 };
 
 
