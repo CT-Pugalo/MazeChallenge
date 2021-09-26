@@ -5,6 +5,8 @@
 #ifndef MAZECHALLENGE_COORDONEE_H
 #define MAZECHALLENGE_COORDONEE_H
 
+#include <string>
+
 
 class coordonnee {
 private:
@@ -41,8 +43,11 @@ public:
         }
     }
 
+    std::string toString(){
+        return "("+ std::to_string(this->getX())+", "+ std::to_string(this->getY())+")";
+    }
     void afficher(){
-        std::cout<<"("<<this->getX()<<", "<<this->getY()<<")\n";
+        toString();
     }
 };
 
