@@ -21,6 +21,14 @@ public:
     void setY(int y){
         this->y=y;
     }
+
+    int getX(){
+        return this->x;
+    }
+    int getY(){
+        return this->y;
+    }
+
     void bouger(char direction){
         if(direction=='h'){
             this->y+=1;
@@ -31,13 +39,6 @@ public:
         }else if(direction=='d'){
             this->x-=1;
         }
-    }
-
-    int getX(){
-        return this->x;
-    }
-    int getY(){
-        return this->y;
     }
 
     void afficher(){

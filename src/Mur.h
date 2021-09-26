@@ -6,13 +6,12 @@
 #define MAZECHALLENGE_MUR_H
 #include "coordonee.h"
 
-class Mur{
+class Mur: protected Case{
 private:
-    coordonnee coord;
     bool traversable = false;
 public:
     Mur(int x, int y){
-        coord = new coordonnee(x, y);
+        Case(x, y);
     }
 };
 

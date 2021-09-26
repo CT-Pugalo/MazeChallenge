@@ -6,10 +6,9 @@
 #define MAZECHALLENGE_CHEMIN_H
 #include "coordonee.h"
 
-class Chemin{
+class Chemin: protected Case {
 private:
-    coordonnee coord;
-    bool traversable = false;
+    bool traversable = true;
 public:
     Mur(int x, int y){
         coord = new coordonnee(x, y);

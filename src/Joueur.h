@@ -16,6 +16,13 @@ public:
         coord=new coordonnee(startPos.getX(), startPos.getY());
         nbTour=0;
     }
+
+    coordonnee getCoord(){
+        return coord;
+    }
+    void bouger(char direction){
+        this->coord.bouger(direction);
+    }
 };
 
 
